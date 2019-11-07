@@ -30,6 +30,23 @@
     document.getElementById('image-box').appendChild(img);
   }
 
+  let imageArray = ["cats.jpg", "hugger.jpg", "internet.jpg", "jackson.jpg", "washington.jpg"]
+
+  imageArray[getRandomInt(0,4)]
+ 
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * (max + 1));
+}
+
+
+  function myTimeoutFunction() {
+    setTimeout(myTimeoutFunction, 2500);
+    addImage(imageArray[getRandomInt(4)])
+  }
+  myTimeoutFunction()
+
+
+
   //your code here
 
 })();

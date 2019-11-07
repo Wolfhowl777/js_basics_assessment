@@ -14,6 +14,12 @@
  */
 
 //your code here
+function message() {
+    let titleElement = document.querySelector("#title")
+    titleElement.innerHTML = "Goodbye World"
 
+}
+
+setTimeout(message, 3000);
 })();
     

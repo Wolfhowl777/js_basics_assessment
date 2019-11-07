@@ -20,6 +20,49 @@
 
 (function () {
 
-    //your code here
+
+
+    let header = document.querySelector(".panel h1")
+    
+
+    header.addEventListener("click", function (){ 
+        
+        console.log(header)
+
+        if (header.style.color === "red"){
+            header.style.color = "black"
+        }
+        else {header.style.color = "red"}
+    
+    
+    
+    })
+
+
+    let listElements = document.querySelectorAll(".section")
+    for(i = 0; i< listElements.length; i++){
+        // console.log (listElements[i])
+        if (i % 2 === 1){
+            listElements[i].style.display = "none"
+        }
+    }
+    
+    document.body.innerHTML = document.body.innerHTML.replace(/bacon/gi, 'LAZER VISION');
+
+
+    let postElementArray = document.querySelectorAll('.post')
+    postElementArray[postElementArray.length-2].remove()
+    postElementArray[postElementArray.length-1].remove()
+    
+
+    
+    let imageArray = document.querySelector('.hide-for-small');
+    console.log(imageArray)
+    imageArray.remove()
+    
+//     //your code here
+
 
 })();
+
+

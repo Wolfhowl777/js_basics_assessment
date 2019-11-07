@@ -10,8 +10,18 @@
 (function() {
 
     //your code here
+    let newArray = []
+    for (let i = 1; i <= artArray.length; i=i+1){
+        artArray.splice(i, 1)
+        // artArray[i]
+        // newArray.push (artArray[i])
+        // console.log (artArray[i])
+
+    }
 
     writeAscii(artArray);
+
+
 
 })();
 
